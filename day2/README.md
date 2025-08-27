@@ -20,4 +20,4 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 ## Setting up a Multibranch Pipeline
 
 1. In Jenkins dashboard, click **New Item**
-   ![Jenkins New Item screenshot](../images/Picture1.png)
+   ![jenkins-ci-cd-pipeline-docker](../images/Picture1.png)
