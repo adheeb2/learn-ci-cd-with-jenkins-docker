@@ -3,8 +3,6 @@
 Today we will learn how to configure **Jenkins locally using Docker**.  
 By the end, you'll have Jenkins running on [http://localhost:8080](http://localhost:8080).
 
----
-
 ## 📌 Prerequisites
 
 - [Docker installed](https://docs.docker.com/get-docker/) on your machine.
