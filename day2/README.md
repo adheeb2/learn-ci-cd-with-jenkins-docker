@@ -18,3 +18,6 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 - It can also be used to discard any branches that doesnt need scanning.
 
 ## Setting up a Multibranch Pipeline
+
+1. In Jenkins dashboard, click **New Item**
+   <img alt = "" src = "/home/ubuntu/Desktop/projects/backend_projects/learn-ci-cd-with-jenkins-docker/images/picture1.png">
