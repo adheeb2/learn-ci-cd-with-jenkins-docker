@@ -1,2 +1,4 @@
-# learn-ci-cd-with-jenkins-docker
-Step-by-step projects to learn Jenkins and Docker for CI/CD pipelines. Includes Jenkinsfile examples, Docker image builds, automated tests, and GitHub integration. Beginner-friendly DevOps practice repo
+# Learn CI/CD with Jenkins & Docker
+
+This repository is a **beginner-friendly DevOps learning project** focused on mastering **Jenkins** and **Docker**.  
+It walks through setting up pipelines, automating builds, running tests, and pushing Docker images — all with hands-on examples.
