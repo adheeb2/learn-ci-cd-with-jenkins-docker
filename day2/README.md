@@ -13,8 +13,8 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 
 ## Multibranch Pipeline
 
-This pipeline is set up so that jenkins can scan through multiple branches at the same time.
-So instead of creating seperate pipelines for seperate branches, it is easier to create a single multibranch pipeline for that project.
-It can also be used to discard any branches that doesnt need scanning.
+- This pipeline is set up so that jenkins can scan through multiple branches at the same time.
+- So instead of creating seperate pipelines for seperate branches, it is easier to create a single multibranch pipeline for that project.
+- It can also be used to discard any branches that doesnt need scanning.
 
 ## Setting up a Multibranch Pipeline
