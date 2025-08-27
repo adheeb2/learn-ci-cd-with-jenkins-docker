@@ -5,11 +5,11 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 
 ## Prerequisites
 
-Jenkins running locally (see Day 1 setup with Docker)
+- Jenkins running locally (see Day 1 setup with Docker)
 
-A Git repository with at least 2–3 branches (main, dev, maybe feature-login)
+- A Git repository with at least 2–3 branches (main, dev, maybe feature-login)
 
-Basic familiarity with Jenkins UI
+- Basic familiarity with Jenkins UI
 
 ## Multibranch Pipeline
 
