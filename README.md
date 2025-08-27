@@ -7,3 +7,8 @@ It walks through setting up pipelines, automating builds, running tests, and pus
 
 - Install & configure **Jenkins** locally (Docker-based setup).
 - Create **Freestyle Jobs** and **Jenkins Pipelines**.
+
+## Tech Stack
+
+- **Jenkins** (CI/CD automation)
+- **Docker** (containerization)
