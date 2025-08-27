@@ -1,6 +1,6 @@
 # 🚀 Day 1: Jenkins Configuration (with Docker)
 
-This guide walks you through setting up **Jenkins locally using Docker**.  
+Today we will learn how to configure **Jenkins locally using Docker**.  
 By the end, you'll have Jenkins running on [http://localhost:8080](http://localhost:8080).
 
 ---
@@ -30,17 +30,16 @@ jenkins/jenkins:lts-jdk17
 Open your terminal inside your project folder and run:
 
 ```bash
-docker run -p 8080:8080 -p 50000:50000 -d \
-  -v jenkins_home:/var/jenkins_home \
-  jenkins/jenkins:lts-jdk17
+docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
 ```
 
 What this does:
 
-- `-p 8080:8080` → Exposes Jenkins UI at http://localhost:8080
-- `-p 50000:50000` → Enables Jenkins agents (future use)
+- `-p 8080:8080` → Exposes Jenkins UI at http://localhost:8080 by mapping lap's port 8080 with container's post 8080
+- `-p 50000:50000` → Jenkins uses port 50000 to talk to “agents” (worker machines that do jobs).
+- `-d`→ This is used to run in the background detached. So Jenkins keep running even after you close the terminal.
 - `-v jenkins_home:/var/jenkins_home` → Saves Jenkins data so it persists
-- `jenkins/jenkins:lts-jdk17` → Official stable Jenkins image with Java 17
+- `jenkins/jenkins:lts-jdk17` → Official stable Jenkins image with Java 17(As of this date)
 
 ---
 
