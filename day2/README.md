@@ -20,4 +20,4 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 ## Setting up a Multibranch Pipeline
 
 1. In Jenkins dashboard, click **New Item**
-   <img alt = "" src = "/home/ubuntu/Desktop/projects/backend_projects/learn-ci-cd-with-jenkins-docker/images/picture1.png">
+   ![Rule-based NPC Dialogue System  Demo](images/picture1.png)
