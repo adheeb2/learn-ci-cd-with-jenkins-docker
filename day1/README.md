@@ -35,7 +35,7 @@ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenk
 
 What this does:
 
-- `-p 8080:8080` → Exposes Jenkins UI at http://localhost:8080 by mapping lap's port 8080 with container's post 8080
+- `-p 8080:8080` → Exposes Jenkins UI at http://localhost:8080 by mapping lap's port 8080 with container's port 8080
 - `-p 50000:50000` → Jenkins uses port 50000 to talk to “agents” (worker machines that do jobs).
 - `-d`→ This is used to run in the background detached. So Jenkins keep running even after you close the terminal.
 - `-v jenkins_home:/var/jenkins_home` → Saves Jenkins data so it persists
