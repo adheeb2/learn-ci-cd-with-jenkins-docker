@@ -20,4 +20,4 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 ## Setting up a Multibranch Pipeline
 
 1. In Jenkins dashboard, click **New Item**
-   ![Rule-based NPC Dialogue System  Demo](images/picture1.png)
+   ![Jenkins New Item screenshot](../images/picture1.png)
