@@ -1,4 +1,4 @@
-# 🚀 Day 1: Jenkins Configuration (with Docker)
+# Day 1: Jenkins Configuration (with Docker)
 
 Today we will learn how to configure **Jenkins locally using Docker**.  
 By the end, you'll have Jenkins running on [http://localhost:8080](http://localhost:8080).
@@ -12,7 +12,7 @@ By the end, you'll have Jenkins running on [http://localhost:8080](http://localh
 
 ---
 
-## 🛠️ Step 1: Get the Jenkins Image
+## Step 1: Get the Jenkins Image
 
 Head over to the official **Jenkins Docker Hub** page:  
 👉 [Jenkins Docker Hub](https://hub.docker.com/r/jenkins/jenkins)
@@ -25,7 +25,7 @@ jenkins/jenkins:lts-jdk17
 
 ---
 
-## 🛠️ Step 2: Run Jenkins in Docker
+## Step 2: Run Jenkins in Docker
 
 Open your terminal inside your project folder and run:
 
@@ -43,7 +43,7 @@ What this does:
 
 ---
 
-## 🛠️ Step 3: Verify Jenkins is Running
+## Step 3: Verify Jenkins is Running
 
 Check if the container is running:
 
@@ -61,7 +61,7 @@ Scroll until you find the **Administrator Password**.
 
 ---
 
-## 🛠️ Step 4: Access Jenkins
+## Step 4: Access Jenkins
 
 1. Open http://localhost:8080 in your browser.
 2. Paste the Administrator Password from the logs.
@@ -70,10 +70,8 @@ Scroll until you find the **Administrator Password**.
 
 ---
 
-## 🎉 Result
+## Result
 
-Congratulations 🎊 — Jenkins is now fully configured and running locally on Docker! You're ready to start creating your first Jenkins jobs and pipelines.
+Congratulations user — Jenkins is now fully configured and running locally on Docker! You're ready to start creating your first Jenkins jobs and pipelines.
 
 ---
-
-🔖 **Tags:** #Jenkins #Docker #CI/CD #DevOps #JenkinsPipeline
