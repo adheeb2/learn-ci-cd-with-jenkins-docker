@@ -52,11 +52,33 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 - ID = global
   ![jenkins-ci-cd-pipeline-docker](../images/Picture6.png)
 
-## Step 1: Setting up a Multibranch Pipeline
+4. Now you can see a new **global credential** with the id **global** has been created. This credential is required for setting up **Multibranch Pipeline**
+
+## Step 3: Create a new Multibranch Pipeline
 
 1. In Jenkins dashboard, click **New Item**
    ![jenkins-ci-cd-pipeline-docker](../images/Picture1.png)
 2. You will be able to see many options in it, we will discuss about it later in the upcoming days.
    But for now lets select **"Multibranch Pipeline"** and enter the project name(eq.**my-pipeline**) and then click ok
    ![jenkins-ci-cd-pipeline-docker](../images/picture3.png)
-3.
+
+## Step 4: Configure Branch source
+
+1. In the Branch Sources section, click "Add source" → "Git"
+2. Enter your Git repository URL
+3. In the credentials section, add the global credential that we have created
+   ![jenkins-ci-cd-pipeline-docker](../images/Picture7.png)
+
+## Step 4: Control Which Branches get built
+
+By default, Jenkins will try to build everthing. So use branch filtering in that case
+
+1. Under Credentials section, You can see a section named **Behaviours**, click on the **Add** option below it
+2. Choose Filter by name(with regular expression) option. The default option will select every branches, so you can select branches that need to be excluded or not
+   ![jenkins-ci-cd-pipeline-docker](../images/picture3.png)
+3. Now click on save and Jenkins will immediately scan your repo
+
+## Note
+
+- Each branch needs a **Jenkinsfile** in root, or it won't build
+- We will learn about it in the upcoming days. This was just created to make you understand about **Multibranch Pipeline** and how it is set up
