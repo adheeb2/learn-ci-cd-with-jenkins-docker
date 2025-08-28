@@ -75,7 +75,7 @@ By default, Jenkins will try to build everthing. So use branch filtering in that
 
 1. Under Credentials section, You can see a section named **Behaviours**, click on the **Add** option below it
 2. Choose Filter by name(with regular expression) option. The default option will select every branches, so you can select branches that need to be excluded or not
-   ![jenkins-ci-cd-pipeline-docker](../images/picture3.png)
+   ![jenkins-ci-cd-pipeline-docker](../images/Picture8.png)
 3. Now click on save and Jenkins will immediately scan your repo
 
 ## Note
