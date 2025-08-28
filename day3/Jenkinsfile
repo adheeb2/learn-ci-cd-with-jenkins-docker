@@ -22,13 +22,13 @@ pipeline{
             }
         }
     }
+    post{
+        success{
+            echo 'Pipeline succeeded'
+        }
+        failed{
+            echo 'Pipeline failed'
+        }
+    }
 }
 
-post{
-    success{
-        echo 'Pipeline Success'
-    }
-    failure{
-        echo 'Pipeline failed'
-    }
-}
