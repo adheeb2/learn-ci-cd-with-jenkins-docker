@@ -21,3 +21,5 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 
 1. In Jenkins dashboard, click **New Item**
    ![jenkins-ci-cd-pipeline-docker](../images/Picture1.png)
+2. You will be able to see many options in it, we will discuss about it later in the upcoming days.
+   But for now lets select **"Multibranch Pipeline"** and enter the project name(eq.**my-pipeline**)
