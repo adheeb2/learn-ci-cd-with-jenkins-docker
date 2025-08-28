@@ -17,10 +17,38 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 - So instead of creating seperate pipelines for seperate branches, it is easier to create a single multibranch pipeline for that project.
 - It can also be used to discard any branches that doesnt need scanning.
 
-## Setting up a Multibranch Pipeline
+## Step 1: Understanding Jenkins Credentials
+
+- Jenkins Provide three types of credential scopes
+
+1. System Credentials:
+   - These are credentials that is not accesible by build jobs or pipelines
+   - These Credentials will not be shown in jenkins while we try to create pipelines
+   - These are just used or available only for ssh purposes and nothing else.
+   - Rest of the credentials below are what will be used for build jobs and pipelines
+2. Global Credentials:
+   - These are the credentials entirely opposite to System Credentials
+   - These are accessible from anywhere for build jobs or pipelines
+   - Use this credential when multiple projects need it
+3. Folder/Project Credentials:
+   - These are credentials that is tied to that particular folder or project
+   - This credential is not visible to other projects or folders
+   - Use this credential if it is used just for that one pipeline
+
+## Step 2: Add Git Credentials
+
+- You can add two credentials(Global and system if required). But for the convenience, lets create a global credential
+
+1. In jenkins dashboard, click **manage jenkins**. Click on Credentials
+   ![jenkins-ci-cd-pipeline-docker](../images/Picture4.png)
+2. Click on the options that you get till you see this image(you can see the locations that we have gone at the top)
+   ![jenkins-ci-cd-pipeline-docker](../images/Picture5.png)
+
+## Step 1: Setting up a Multibranch Pipeline
 
 1. In Jenkins dashboard, click **New Item**
    ![jenkins-ci-cd-pipeline-docker](../images/Picture1.png)
 2. You will be able to see many options in it, we will discuss about it later in the upcoming days.
-   But for now lets select **"Multibranch Pipeline"** and enter the project name(eq.**my-pipeline**)
+   But for now lets select **"Multibranch Pipeline"** and enter the project name(eq.**my-pipeline**) and then click ok
    ![jenkins-ci-cd-pipeline-docker](../images/picture3.png)
+3.
