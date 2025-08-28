@@ -69,7 +69,7 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 3. In the credentials section, add the global credential that we have created
    ![jenkins-ci-cd-pipeline-docker](../images/Picture7.png)
 
-## Step 4: Control Which Branches get built
+## Step 5: Control Which Branches get built
 
 By default, Jenkins will try to build everthing. So use branch filtering in that case
 
@@ -82,3 +82,7 @@ By default, Jenkins will try to build everthing. So use branch filtering in that
 
 - Each branch needs a **Jenkinsfile** in root, or it won't build
 - We will learn about it in the upcoming days. This was just created to make you understand about **Multibranch Pipeline** and how it is set up
+
+## Result
+
+Your multibranch pipeline is now configured! The next step is creating a **Jenkinsfile** in your repository branches to define the actual build process.
