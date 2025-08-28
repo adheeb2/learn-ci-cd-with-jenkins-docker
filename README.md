@@ -12,3 +12,7 @@ It walks through setting up pipelines, automating builds, running tests, and pus
 
 - **Jenkins** (CI/CD automation)
 - **Docker** (containerization)
+
+## Authors
+
+- [Adheeb anvar](https://www.github.com/adheeb2)
