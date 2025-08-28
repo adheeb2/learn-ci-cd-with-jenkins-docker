@@ -42,7 +42,15 @@ By the end, you’ll know how Jenkins scans your repo, builds from different bra
 1. In jenkins dashboard, click **manage jenkins**. Click on Credentials
    ![jenkins-ci-cd-pipeline-docker](../images/Picture4.png)
 2. Click on the options that you get till you see this image(you can see the locations that we have gone at the top)
+   Click on Add Credentials and select **Global** as scope
    ![jenkins-ci-cd-pipeline-docker](../images/Picture5.png)
+3. Fill out the fields in this format:
+
+- Type: Username with password
+- Username = global
+- Password/Token = password
+- ID = global
+  ![jenkins-ci-cd-pipeline-docker](../images/Picture6.png)
 
 ## Step 1: Setting up a Multibranch Pipeline
 
