@@ -96,3 +96,9 @@ pipeline {
 - You can either place JenkinsFile in root, this makes it easier for jenkins to scan it.
 - Or you can keep it in a folder. But make sure to specify the path in the 'build configuration' part of Configuration in your multibranch pipeline
   ![jenkins-ci-cd-pipeline-docker](../images/Picture9.png)
+
+## Step 4: Connecting webhook to jenkins
+
+- In Jenkins, go to your Multibranch Pipeline job
+- Then in configuration, go on to the 'build configuration' section where you can find Scan Multibranch Pipeline Triggers
+- Under that, you will find 'Periodically if not otherwise run'. Tick that option and give '1 minute' as interval.
