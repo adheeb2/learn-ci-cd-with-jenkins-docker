@@ -12,3 +12,10 @@ By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub
 - Ngrok installed and configured
 
 - A basic Jenkins Multibranch Pipeline created (see Day 2)
+
+## Step 1: Understanding Ngrok
+
+- The laptop is running Jenkins on http://localhost:8080.
+- GitHub needs a way to notify Jenkins about code changes, but Jenkins on localhost:8080 is only accessible to us locally and not from the internet.
+- In that case, we will use something known as **Ngrok**
+- It is a tool that creates temporary public URL for our local Jenkins
