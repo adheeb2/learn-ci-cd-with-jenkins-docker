@@ -36,6 +36,9 @@ By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub
 
   ```
 
-  https://random-id.ngrok.io/github-webhook/
+  https://random-id.ngrok-free.app/github-webhook/
 
   ```
+
+  4. Make sure the **content type** is application/json
+  5. Select **Just the push event** and save it
