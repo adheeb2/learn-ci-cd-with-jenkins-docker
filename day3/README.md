@@ -87,3 +87,7 @@ pipeline {
   1. agent any → run on any available machine.
 
   2. agent none → don’t run automatically, you’ll define specific agents per stage.
+
+- stages{} - Collection of different steps in the CI/CD
+- stage('Name'){} - Each step names. For eg: stage('Build') represents to us that this step is used for install dependencies.
+- steps{} - The actual commands run inside this. For eg: echo 'Building'
