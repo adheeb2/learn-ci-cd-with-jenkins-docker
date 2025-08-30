@@ -20,11 +20,6 @@ pipeline{
             steps{
                 echo 'Deploying app'
             }
-        stage('Testing'){
-            steps{
-                echo 'Testing it out'
-            }
-        }
         }
     }
     post{
