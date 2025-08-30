@@ -1,6 +1,6 @@
 # Day 3: Automating Jenkins Builds with Ngrok, GitHub Webhooks & Jenkinsfile
 
-Today we will learn how to write **JenkinsFile** and **automate Jenkins builds** using **Ngrok** and **GitHub Webhooks**, instead of manually clicking “Build Now”.
+Today we will learn how to write **Jenkinsfile** and **automate Jenkins builds** using **Ngrok** and **GitHub Webhooks**, instead of manually clicking “Build Now”.
 By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub webhooks notify Jenkins, and how Jenkinsfile defines your pipeline.
 
 ## Prerequisites
@@ -46,18 +46,18 @@ By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub
 
 - Now, every time you push code → GitHub sends a JSON message to Jenkins.
 
-## Step 3: Setting up JenkinsFile
+## Step 3: Setting up Jenkinsfile
 
 - A Jenkinsfile is just a plain text file where you write down the instructions for Jenkins on how to build, test, and deploy your project.
 
 - It is written in Groovy-based DSL (Domain Specific Language)
 
-- There are two syntaxes for JenkinsFile
+- There are two syntaxes for Jenkinsfile
 
   1. Declarative Syntax(easier and most recommended for beginners)
   2. Scripted Syntax(difficult and less common for basic setups)
 
-- Syntax of JenkinsFile:
+- Syntax of Jenkinsfile:
 
 ```
 pipeline {
@@ -93,7 +93,7 @@ pipeline {
 - stage('Name'){} - Each step names. For eg: stage('Build') represents to us that this step is used for install dependencies.
 - steps{} - The actual commands run inside this. For eg: echo 'Building'
 
-- You can either place JenkinsFile in root, this makes it easier for jenkins to scan it.
+- You can either place Jenkinsfile in root, this makes it easier for jenkins to scan it.
 - Or you can keep it in a folder. But make sure to specify the path in the 'build configuration' part of Configuration in your multibranch pipeline
   ![jenkins-ci-cd-pipeline-docker](../images/Picture9.png)
 
@@ -132,4 +132,4 @@ pipeline {
 
 ## Result
 
-We have now officially written our first JenkinsFile, connected GitHub Webhooks via Ngrok, and automated our Jenkins CI/CD pipeline without manual triggers.
+We have now officially written our first Jenkinsfile, connected GitHub Webhooks via Ngrok, and automated our Jenkins CI/CD pipeline without manual triggers.
