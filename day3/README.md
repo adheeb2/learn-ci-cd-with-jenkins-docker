@@ -91,3 +91,7 @@ pipeline {
 - stages{} - Collection of different steps in the CI/CD
 - stage('Name'){} - Each step names. For eg: stage('Build') represents to us that this step is used for install dependencies.
 - steps{} - The actual commands run inside this. For eg: echo 'Building'
+
+- You can either place JenkinsFile in root, this makes it easier for jenkins to scan it.
+- Or you can keep it in a folder. But make sure to specify the path in the 'build configuration' part of Configuration in your pipeline
+  ![jenkins-ci-cd-pipeline-docker](../images/Picture9.png)
