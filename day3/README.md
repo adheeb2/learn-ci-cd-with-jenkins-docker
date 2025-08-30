@@ -117,7 +117,7 @@ pipeline {
 
 - No need to click **Build Now** manually
 
-- Check it on **Console Output** section to check whether the build has failed or not(click on the #number on left side under the Builds section )
+- Check it on **Console Output** section to check whether the build has failed or not(click on the #number on left side under the Builds section)
   ![jenkins-ci-cd-pipeline-docker](../images/Picture10.png)
 
   ![jenkins-ci-cd-pipeline-docker](../images/Picture12.png)
