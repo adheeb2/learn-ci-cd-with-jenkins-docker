@@ -102,3 +102,17 @@ pipeline {
 - In Jenkins, go to your Multibranch Pipeline job
 - Then in configuration, go on to the 'build configuration' section where you can find **Scan Multibranch Pipeline Triggers**(check the above image to understand)
 - Under that, you will find **Periodically if not otherwise run**. Tick that option and give '1 minute' as interval.
+
+## Step 5: Testing the Setup
+
+- Run ngrok http 8080 and keep it running
+
+- Push a commit to your GitHub repo
+
+- Check Jenkins:
+
+- It should detect the webhook trigger
+
+- Your Jenkinsfile stages (Build, Test, Deploy) should run automatically
+
+- No need to click Build Now anymore
