@@ -51,7 +51,12 @@ By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub
 
 - Without it, Jenkins knows when to build but not what to do.
 
-- Syntax of JenkinsFile
+- There are two syntaxes for JenkinsFile
+
+  1. Declarative Syntax(easier and most recommended for beginners)
+  2. Scripted Syntax(difficult and less common for basic setups)
+
+- Syntax of JenkinsFile:
 
 ```
 pipeline {
