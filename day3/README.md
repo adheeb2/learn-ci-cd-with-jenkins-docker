@@ -115,4 +115,7 @@ pipeline {
 
 - Your Jenkinsfile stages (Build, Test, Deploy) should run automatically
 
-- No need to click Build Now anymore
+- No need to click **Build Now** manually
+
+- Check it on **Console Output** section to check whether the build has failed or not(click on the #number on left side under the Builds section )
+  ![jenkins-ci-cd-pipeline-docker](../images/Picture11.png)
