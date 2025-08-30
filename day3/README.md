@@ -100,5 +100,5 @@ pipeline {
 ## Step 4: Connecting webhook to jenkins
 
 - In Jenkins, go to your Multibranch Pipeline job
-- Then in configuration, go on to the 'build configuration' section where you can find **Scan Multibranch Pipeline Triggers**(check the step 3 image to understand)
+- Then in configuration, go on to the 'build configuration' section where you can find **Scan Multibranch Pipeline Triggers**(check the above image to understand)
 - Under that, you will find **Periodically if not otherwise run**. Tick that option and give '1 minute' as interval.
