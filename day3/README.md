@@ -50,3 +50,28 @@ By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub
 - A Jenkinsfile defines what steps your pipeline should run after each build trigger.
 
 - Without it, Jenkins knows when to build but not what to do.
+
+- Syntax of JenkinsFile
+
+```
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+            }
+        }
+    }
+}
+```
