@@ -47,9 +47,9 @@ By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub
 
 ## Step 3: Setting up JenkinsFile
 
-- A Jenkinsfile defines what steps your pipeline should run after each build trigger.
+- A Jenkinsfile is just a plain text file where you write down the instructions for Jenkins on how to build, test, and deploy your project.
 
-- Without it, Jenkins knows when to build but not what to do.
+- It is written in Groovy-based DSL (Domain Specific Language)
 
 - There are two syntaxes for JenkinsFile
 
@@ -80,3 +80,10 @@ pipeline {
     }
 }
 ```
+
+- pipeline{} - The entire thing lives inside this
+- agent - Defines where to run the pipeline.
+
+  1. agent any → run on any available machine.
+
+  2. agent none → don’t run automatically, you’ll define specific agents per stage.
