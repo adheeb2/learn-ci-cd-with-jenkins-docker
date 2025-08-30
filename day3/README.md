@@ -101,7 +101,7 @@ pipeline {
 
 - In Jenkins, go to your Multibranch Pipeline job
 - Then in configuration, go on to the 'build configuration' section where you can find **Scan Multibranch Pipeline Triggers**(check the above image to understand)
-- Under that, you will find **Periodically if not otherwise run**. Tick that option and give '1 minute' as interval.
+- Under that, you will find **Periodically if not otherwise run**. Tick that option and give '1 minute' as interval.(The periodic scan is just a fallback in case webhook fails.”)
 
 ## Step 5: Testing the Setup
 
@@ -123,3 +123,13 @@ pipeline {
   ![jenkins-ci-cd-pipeline-docker](../images/Picture12.png)
 
   ![jenkins-ci-cd-pipeline-docker](../images/Picture11.png)
+
+## Note
+
+- If ngrok is closed, GitHub cannot reach Jenkins.
+
+- In real-world setups, you’d run Jenkins on a server (EC2, etc.) instead of relying on ngrok.
+
+## Result
+
+We have now officially written our first JenkinsFile, connected GitHub Webhooks via Ngrok, and automated our Jenkins CI/CD pipeline without manual triggers.
