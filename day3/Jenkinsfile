@@ -21,11 +21,6 @@ pipeline{
                 echo 'Deploying app'
             }
         }
-        stage('Run'){
-            steps{
-                echo 'Running it out'
-            }
-        }
     }
     post{
         success{
