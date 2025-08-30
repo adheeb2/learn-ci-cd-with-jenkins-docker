@@ -42,3 +42,11 @@ By the end, you’ll understand how Ngrok exposes your local Jenkins, how GitHub
 
   4. Make sure the **content type** is application/json
   5. Select **Just the push event** and save it
+
+- Now, every time you push code → GitHub sends a JSON message to Jenkins.
+
+## Step 3: Setting up JenkinsFile
+
+- A Jenkinsfile defines what steps your pipeline should run after each build trigger.
+
+- Without it, Jenkins knows when to build but not what to do.
